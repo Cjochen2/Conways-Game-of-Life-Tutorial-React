@@ -11,9 +11,8 @@ const Grid = (props) => {
         for(let j = 0; j < props.cols; j++) {
             
             let boxId = i + "_" + j;
-            console.log(props.gridFull[i][j])
             boxClass = props.gridFull[i][j] ? "box on" : "box off"
-
+            
             rowsArr.push(
                 <Box
                 boxClass={boxClass}
