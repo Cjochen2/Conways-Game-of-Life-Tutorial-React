@@ -3,8 +3,8 @@ import Grid from './grid'
 import Buttons from './buttons'
 
 const Main = () => {
-    const rows = 30;
-    const cols = 50;
+    let rows = 30;
+    let cols = 50;
     let intervalId;
     let speed = 100;
 
@@ -45,20 +45,39 @@ const Main = () => {
     }
 
     const slow = () => {
-        speed = 100;
+        speed = 1000;
         playButton();
     }
     const fast = () => {
-        speed = 1000;
+        speed = 100;
         playButton();
     }
 
     const clear = () => {
-
+        let grid = Array(rows).fill().map(() => Array(cols).fill(false));
+        setGridFull(grid);
+        setGeneration(0);
     }
 
-    const gridSize = () => {
-
+    const gridSize = (size) => {
+        switch(size) {
+            case '1':
+                cols=20;
+                rows=10;
+            break;
+            case '2':
+                cols=50;
+                rows=30;
+            break;
+            case '3':
+                cols=70;
+                rows=50;
+            break;
+            default:
+                cols=50;
+                rows=30;
+        }
+        clear();
     }
 
     const play = () => {
