@@ -3,7 +3,7 @@ import Box from './box';
 
 const Grid = (props) => {
 
-    const width = (props.cols * 16) + 1;
+    const width = (props.cols * 14) + 1;
     let rowsArr = [];
     let boxClass = "";
 

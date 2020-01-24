@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Grid from './grid'
+import Buttons from './buttons'
 
 const Main = () => {
-    const speed = 1000;
     const rows = 30;
     const cols = 50;
+    let intervalId;
+    let speed = 100;
 
     const [generation, setGeneration] = useState(0);
     const [gridFull, setGridFull] = useState(Array(rows).fill().map(() => Array(cols).fill(false)));
@@ -34,9 +36,29 @@ const Main = () => {
     }
 
     const playButton = () => {
-        let intervalId;
         clearInterval(intervalId)
         intervalId = setInterval(play, speed)
+    }
+
+    const pauseButton = () => {
+        clearInterval(intervalId)
+    }
+
+    const slow = () => {
+        speed = 100;
+        playButton();
+    }
+    const fast = () => {
+        speed = 1000;
+        playButton();
+    }
+
+    const clear = () => {
+
+    }
+
+    const gridSize = () => {
+
     }
 
     const play = () => {
@@ -65,6 +87,15 @@ const Main = () => {
     return (
         <div>
             <h1>The Game of Life</h1>
+            <Buttons
+            playButton={playButton}
+            pauseButton={pauseButton}
+            slow={slow}
+            fast={fast}
+            clear={clear}
+            seed={seed}
+            gridSize={gridSize} 
+            />
             <Grid
                 gridFull={gridFull}
                 rows={rows}
