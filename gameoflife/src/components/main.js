@@ -5,15 +5,16 @@ import Buttons from './buttons'
 const Main = () => {
     let rows = 30;
     let cols = 50;
-    let intervalId;
     let speed = 100;
 
     const [generation, setGeneration] = useState(0);
     const [gridFull, setGridFull] = useState(Array(rows).fill().map(() => Array(cols).fill(false)));
+    const [intervalId, setIntervalId] = useState(null)
 
     useEffect(() => {
         seed();
         playButton();
+        console.log('Component Mounted')
     }, [])
 
     const selectBox = (row, col) => {
@@ -37,21 +38,24 @@ const Main = () => {
 
     const playButton = () => {
         clearInterval(intervalId)
-        intervalId = setInterval(play, speed)
+        setIntervalId( setInterval(() => {
+            play()
+        }, speed)
+        )
     }
 
     const pauseButton = () => {
         clearInterval(intervalId)
     }
 
-    const slow = () => {
-        speed = 1000;
-        playButton();
-    }
-    const fast = () => {
-        speed = 100;
-        playButton();
-    }
+    // const slow = () => {
+    //     speed = 1000;
+    //     playButton();
+    // }
+    // const fast = () => {
+    //     speed = 100;
+    //     playButton();
+    // }
 
     const clear = () => {
         let grid = Array(rows).fill().map(() => Array(cols).fill(false));
@@ -59,26 +63,26 @@ const Main = () => {
         setGeneration(0);
     }
 
-    const gridSize = (size) => {
-        switch(size) {
-            case '1':
-                cols=20;
-                rows=10;
-            break;
-            case '2':
-                cols=50;
-                rows=30;
-            break;
-            case '3':
-                cols=70;
-                rows=50;
-            break;
-            default:
-                cols=50;
-                rows=30;
-        }
-        clear();
-    }
+    // const gridSize = (size) => {
+    //     switch(size) {
+    //         case '1':
+    //             cols=20;
+    //             rows=10;
+    //         break;
+    //         case '2':
+    //             cols=50;
+    //             rows=30;
+    //         break;
+    //         case '3':
+    //             cols=70;
+    //             rows=50;
+    //         break;
+    //         default:
+    //             cols=50;
+    //             rows=30;
+    //     }
+    //     clear();
+    // }
 
     const play = () => {
         let g = gridFull;
@@ -103,17 +107,22 @@ const Main = () => {
         setGridFull(g2);        
     }
 
+    const genCount = () => {
+        setGeneration(generation + 1)
+    }
+
     return (
         <div>
             <h1>The Game of Life</h1>
             <Buttons
             playButton={playButton}
             pauseButton={pauseButton}
-            slow={slow}
-            fast={fast}
+            // slow={slow}
+            // fast={fast}
             clear={clear}
             seed={seed}
-            gridSize={gridSize} 
+            // gridSize={gridSize}
+            count={genCount}
             />
             <Grid
                 gridFull={gridFull}
