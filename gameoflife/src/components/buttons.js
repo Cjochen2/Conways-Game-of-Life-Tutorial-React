@@ -5,6 +5,7 @@ const Buttons = (props) => {
 
     const handleSelect = (evt) => {
         props.gridSize(evt);
+        console.log(evt)
     }
 
     return (
@@ -13,10 +14,9 @@ const Buttons = (props) => {
                 <button className='btn btn default' onClick={() => props.playButton()}>Play</button>
                 <button className='btn btn default' onClick={() => props.pauseButton()}>Pause</button>
                 <button className='btn btn default' onClick={() => props.clear()}>Clear</button>
-                {/* <button className='btn btn default' onClick={() => props.slow()}>Slow</button>
-                <button className='btn btn default' onClick={() => props.fast()}>Fast</button> */}
+                <button className='btn btn default' onClick={() => props.slow()}>Slow</button>
+                <button className='btn btn default' onClick={() => props.fast()}>Fast</button>
                 <button className='btn btn default' onClick={() => props.seed()}>Seed</button>
-                <button className='btn btn default' onClick={() => props.count()}>Count</button>
                 <DropdownButton
                     title="Grid Size"
                     id="size-menu"
