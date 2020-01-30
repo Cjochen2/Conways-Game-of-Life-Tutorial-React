@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/css/main.53e5b5fd.chunk.css",
-    "main.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/main.753902e6.chunk.js",
-    "main.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/main.753902e6.chunk.js.map",
-    "runtime-main.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/runtime-main.2759f088.js",
-    "runtime-main.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/runtime-main.2759f088.js.map",
-    "static/js/2.7b9fba90.chunk.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js",
-    "static/js/2.7b9fba90.chunk.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js.map",
-    "index.html": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/index.html",
-    "precache-manifest.825cfa55351de9d1055446c95c7f0298.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/precache-manifest.825cfa55351de9d1055446c95c7f0298.js",
-    "service-worker.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/service-worker.js",
-    "static/css/main.53e5b5fd.chunk.css.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/css/main.53e5b5fd.chunk.css.map",
-    "static/js/2.7b9fba90.chunk.js.LICENSE": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js.LICENSE"
+    "main.css": "/Conways-Game-of-Life-Tutorial-React/static/css/main.53e5b5fd.chunk.css",
+    "main.js": "/Conways-Game-of-Life-Tutorial-React/static/js/main.753902e6.chunk.js",
+    "main.js.map": "/Conways-Game-of-Life-Tutorial-React/static/js/main.753902e6.chunk.js.map",
+    "runtime-main.js": "/Conways-Game-of-Life-Tutorial-React/static/js/runtime-main.22b19215.js",
+    "runtime-main.js.map": "/Conways-Game-of-Life-Tutorial-React/static/js/runtime-main.22b19215.js.map",
+    "static/js/2.7b9fba90.chunk.js": "/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js",
+    "static/js/2.7b9fba90.chunk.js.map": "/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js.map",
+    "index.html": "/Conways-Game-of-Life-Tutorial-React/index.html",
+    "precache-manifest.a344a31be68081ddbc7aa1b9d67e7eed.js": "/Conways-Game-of-Life-Tutorial-React/precache-manifest.a344a31be68081ddbc7aa1b9d67e7eed.js",
+    "service-worker.js": "/Conways-Game-of-Life-Tutorial-React/service-worker.js",
+    "static/css/main.53e5b5fd.chunk.css.map": "/Conways-Game-of-Life-Tutorial-React/static/css/main.53e5b5fd.chunk.css.map",
+    "static/js/2.7b9fba90.chunk.js.LICENSE": "/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.2759f088.js",
+    "static/js/runtime-main.22b19215.js",
     "static/js/2.7b9fba90.chunk.js",
     "static/css/main.53e5b5fd.chunk.css",
     "static/js/main.753902e6.chunk.js"
