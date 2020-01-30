@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/css/main.2429d857.chunk.css",
-    "main.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/main.95c58026.chunk.js",
-    "main.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/main.95c58026.chunk.js.map",
-    "runtime-main.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/runtime-main.2759f088.js",
-    "runtime-main.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/runtime-main.2759f088.js.map",
-    "static/js/2.7b9fba90.chunk.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js",
-    "static/js/2.7b9fba90.chunk.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js.map",
-    "index.html": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/index.html",
-    "precache-manifest.a725f367a3e5d2066440ffae16bea8f3.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/precache-manifest.a725f367a3e5d2066440ffae16bea8f3.js",
-    "service-worker.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/service-worker.js",
-    "static/css/main.2429d857.chunk.css.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/css/main.2429d857.chunk.css.map",
-    "static/js/2.7b9fba90.chunk.js.LICENSE": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/static/js/2.7b9fba90.chunk.js.LICENSE"
+    "main.css": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/css/main.53e5b5fd.chunk.css",
+    "main.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/js/main.b37db5fc.chunk.js",
+    "main.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/js/main.b37db5fc.chunk.js.map",
+    "runtime-main.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/js/runtime-main.380fc4d5.js",
+    "runtime-main.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/js/runtime-main.380fc4d5.js.map",
+    "static/js/2.7b9fba90.chunk.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/js/2.7b9fba90.chunk.js",
+    "static/js/2.7b9fba90.chunk.js.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/js/2.7b9fba90.chunk.js.map",
+    "index.html": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/index.html",
+    "precache-manifest.85244191c604765cf24c9be9b95a9b07.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/precache-manifest.85244191c604765cf24c9be9b95a9b07.js",
+    "service-worker.js": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/service-worker.js",
+    "static/css/main.53e5b5fd.chunk.css.map": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/css/main.53e5b5fd.chunk.css.map",
+    "static/js/2.7b9fba90.chunk.js.LICENSE": "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/static/js/2.7b9fba90.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.2759f088.js",
+    "static/js/runtime-main.380fc4d5.js",
     "static/js/2.7b9fba90.chunk.js",
-    "static/css/main.2429d857.chunk.css",
-    "static/js/main.95c58026.chunk.js"
+    "static/css/main.53e5b5fd.chunk.css",
+    "static/js/main.b37db5fc.chunk.js"
   ]
 }

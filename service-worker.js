@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Cjochen2/Conways-Game-of-Life-Tutorial-React/precache-manifest.a725f367a3e5d2066440ffae16bea8f3.js"
+  "/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/precache-manifest.85244191c604765cf24c9be9b95a9b07.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/Cjochen2/Conways-Game-of-Life-Tutorial-React/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife/index.html"), {
   
   blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
