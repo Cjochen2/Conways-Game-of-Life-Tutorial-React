@@ -15,13 +15,13 @@ const Main = () => {
     const [intervalId, setIntervalId] = useState(null);
 
     useEffect(() => {
-        if(!mounted.current) {
+        if (!mounted.current) {
             seed();
-        playButton();
-        mounted.current = true;
-        console.log('This Runs')
+            playButton();
+            mounted.current = true;
+            console.log('This Runs')
         }
-        
+
     }, []);
 
     const selectBox = (row, col) => {
@@ -44,7 +44,7 @@ const Main = () => {
 
     const playButton = () => {
         clearInterval(intervalId)
-        setIntervalId( setInterval(() => {
+        setIntervalId(setInterval(() => {
             play()
         }, speed)
         )
@@ -72,19 +72,19 @@ const Main = () => {
     }
 
     const gridSize = (size) => {
-        switch(size) {
+        switch (size) {
             case '1':
                 rows = 10;
                 cols = 20;
-            break;
+                break;
             case '2':
                 rows = 30;
                 cols = 50;
-            break;
+                break;
             case '3':
                 rows = 50;
                 cols = 70;
-            break;
+                break;
             default:
                 rows = 30;
                 cols = 50;
@@ -112,20 +112,20 @@ const Main = () => {
             }
         }
         setGeneration(prevGeneration => prevGeneration + 1);
-        setGridFull(g2);        
+        setGridFull(g2);
     }
 
     return (
         <div>
             <h1>The Game of Life</h1>
             <Buttons
-            playButton={playButton}
-            pauseButton={pauseButton}
-            slow={slow}
-            fast={fast}
-            clear={clear}
-            seed={seed}
-            gridSize={gridSize}
+                playButton={playButton}
+                pauseButton={pauseButton}
+                slow={slow}
+                fast={fast}
+                clear={clear}
+                seed={seed}
+                gridSize={gridSize}
             />
             <Grid
                 gridFull={gridFull}
