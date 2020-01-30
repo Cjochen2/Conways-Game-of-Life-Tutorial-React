@@ -2,7 +2,7 @@
   "name": "gameoflife",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Cjochen2/Conways-Game-of-Life-Tutorial-React",
+  "homepage": "https://github.com/Cjochen2/Conways-Game-of-Life-Tutorial-React/tree/613eeafc6acb7276b3bab9691a09b5ef94e325c7/gameoflife",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",

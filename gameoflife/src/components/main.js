@@ -2,32 +2,27 @@ import React, { useState, useEffect, useRef } from 'react';
 import Grid from './grid'
 import Buttons from './buttons'
 
+let rows = 30;
+let cols = 50;
+let speed = 100;
+
 const Main = () => {
-    // let rows = 30;
-    // let cols = 50;
-    let speed = 100;
+
     const mounted = useRef()
 
-    const [cols, setCols] = useState(50);
-    const [rows, setRows] = useState(30);
     const [generation, setGeneration] = useState(0);
     const [gridFull, setGridFull] = useState(Array(rows).fill().map(() => Array(cols).fill(false)));
     const [intervalId, setIntervalId] = useState(null);
 
-
-    useEffect(() => {
-        seed();
-        playButton();
-    }, []);
-
     useEffect(() => {
         if(!mounted.current) {
-            mounted.current = true
-        } else {
-            clear();
-            console.log(cols + ' ' + rows)
+            seed();
+        playButton();
+        mounted.current = true;
+        console.log('This Runs')
         }
-    }, [cols, rows])
+        
+    }, []);
 
     const selectBox = (row, col) => {
         let gridCopy = [...gridFull];
@@ -51,7 +46,6 @@ const Main = () => {
         clearInterval(intervalId)
         setIntervalId( setInterval(() => {
             play()
-            console.log(generation)
         }, speed)
         )
     }
@@ -70,6 +64,8 @@ const Main = () => {
     }
 
     const clear = () => {
+
+        clearInterval(intervalId)
         let grid = Array(rows).fill().map(() => Array(cols).fill(false));
         setGridFull(grid);
         setGeneration(0);
@@ -78,21 +74,22 @@ const Main = () => {
     const gridSize = (size) => {
         switch(size) {
             case '1':
-                setCols(20);
-                setRows(10);
+                rows = 10;
+                cols = 20;
             break;
             case '2':
-                setCols(50);
-                setRows(30);
+                rows = 30;
+                cols = 50;
             break;
             case '3':
-                setCols(70);
-                setRows(50);
+                rows = 50;
+                cols = 70;
             break;
             default:
-                setCols(50);
-                setRows(30);
+                rows = 30;
+                cols = 50;
         }
+        clear();
     }
 
     const play = () => {
@@ -114,7 +111,7 @@ const Main = () => {
                 if (!g[i][j] && count === 3) g2[i][j] = true;
             }
         }
-        setGeneration(generation => generation + 1);
+        setGeneration(prevGeneration => prevGeneration + 1);
         setGridFull(g2);        
     }
 

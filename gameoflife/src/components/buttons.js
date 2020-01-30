@@ -5,7 +5,6 @@ const Buttons = (props) => {
 
     const handleSelect = (evt) => {
         props.gridSize(evt);
-        console.log(evt)
     }
 
     return (
